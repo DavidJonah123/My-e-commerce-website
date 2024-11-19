@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Glamour Wedding Store</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Glamour Wedding Store</h1>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="suits.html">Suits</a>
+      <a href="gowns.html">Gowns</a>
+      <a href="shoes.html">Shoes</a>
+      <a href="accessories.html">Accessories</a>
+      <a href="aboutus.html">About Us</a>
+      </li>
+      </ul>
+    </nav>
+    <div id="cart-icon">
+      <span id="cart-count">0</span> 🛒
+    </div>
+  </header>
+
+  <!-- Product List -->
+  <section id="product-list">
+    <div class="product">
+      <img src="images/navybluesuit2.jpg" alt="Navy Blue Wedding suit">
+      <h3>Navy Blue Wedding Suit</h3>
+      <p>$140.00</p>
+      <button onclick="addToCart('Navy Blue Wedding Suit', 140)">Add to Cart</button>
+      <p> </p>
+    </div>
+
+    <div class="product">
+      <img src="images/blacksuit.jpg" alt="Black Wedding suit">
+      <h3>Black Wedding Suit</h3>
+      <p>$150.00</p>
+      <button onclick="addToCart('Black Wedding Suit', 150)">Add to Cart</button>
+      <p> </p>
+    </div>
+
+    <div class="product">
+      <img src="images/whitesuit.jpg" alt="White Wedding Suit">
+      <h3>White Wedding Suit</h3>
+      <p>$145.00</p>
+      <button onclick="addToCart('White Wedding Suit', 145)">Add to Cart</button>
+      <p> </p>
+    </div>
+
+    <div class="product">
+      <img src="images/redsuit.jpg" alt="Red Wedding Suit">
+      <h3>Red Wedding Suit</h3>
+      <p>$130.00</p>
+      <button onclick="addToCart('Red Wedding Suit', 130)">Add to Cart</button>
+
+    </div>
+
+    <div class="product">
+      <img src="images/navybluesuit2.jpg" alt="Navy Blue Wedding suit">
+      <h3>Navy Blue Wedding Suit</h3>
+      <p>$152.00</p>
+      <button onclick="addToCart('Navy Blue Wedding Suit', 152)">Add to Cart</button>
+      <p> </p>
+    </div>
+    
+    <!-- Add more products as needed -->
+  </section>
+  <!--hhhhh............................ -->
+  
+  <!-- Product List -->
+  <section id="product-list">
+    <div class="product">
+      <img src="images/gown1.jpg" alt="Diamond Glow Wedding Gown">
+      <h3>Diamond glow wedding gown</h3>
+      <p>$120.00</p>
+      <button onclick="addToCart('Diamond Glow Wedding Gown', 120)">Add to Cart</button>
+      <p> </p>
+    </div>
+
+    <div class="product">
+      <img src="images/gown2.jpg" alt="Amazing Beauty Wedding Gown">
+      <h3>Amazing beauty wedding gown</h3>
+      <p>$100.00</p>
+      <button onclick="addToCart('Amazing Beauty Wedding Gown', 100)">Add to Cart</button>
+      <p> </p>
+    </div>
+
+    <div class="product">
+      <img src="images/gown3.jpg" alt="Precious Wedding Gown">
+      <h3>Precious Wedding Gown</h3>
+      <p>$110.00</p>
+      <button onclick="addToCart('Precious Wedding Gown', 110)">Add to Cart</button>
+      <p> </p>
+    </div>
+
+    <div class="product">
+      <img src="images/gown4.jpg" alt="Cool Wedding Gown">
+      <h3>Cool Wedding Gown</h3>
+      <p>$130.00</p>
+      <button onclick="addToCart('Cool Wedding Gown', 130)">Add to Cart</button>
+
+    </div>
+
+    <div class="product">
+      <img src="images/gown1.jpg" alt="Diamond Glow Wedding Gown">
+      <h3>Diamond glow wedding gown</h3>
+      <p>$140.00</p>
+      <button onclick="addToCart('Diamond Glow Wedding Gown', 140)">Add to Cart</button>
+      <p> </p>
+    </div>
+
+    <!-- Add more products as needed -->
+  </section>
+
+  <!-- Product List -->
+  <section id="product-list">
+    <div class="product">
+      <img src="images/shoe1.jpg" alt="Men shoe Black">
+      <h3>Black shoes for men</h3>
+      <p>$50.00</p>
+      <button onclick="addToCart('Black shoes for men', 50)">Add to Cart</button>
+      <p> </p>
+    </div>
+
+    <div class="product">
+      <img src="images/shoe2.png" alt="Black Turkey shoe">
+      <h3>Black Turkey shoe for men</h3>
+      <p>$25.00</p>
+      <button onclick="addToCart('Black Turkey Shoes', 25)">Add to Cart</button>
+      <p> </p>
+    </div>
+
+    <div class="product">
+      <img src="images/shoe3.jpg" alt="Black Italian Shoe">
+      <h3>Black Italian Shoe</h3>
+      <p>$35.00</p>
+      <button onclick="addToCart('Black Italian Shoe', 35)">Add to Cart</button>
+      <p> </p>
+    </div>
+
+    <div class="product">
+      <img src="images/shoe4.jpg" alt="Black Nigerian-made shoe">
+      <h3>Black Nigerian-made shoes</h3>
+      <p>$20.00</p>
+      <button onclick="addToCart('Black Nigerian-made shoe', 20)">Add to Cart</button>
+
+    </div>
+
+    <div class="product">
+      <img src="images/shoe1.jpg" alt="Men shoe Black">
+      <h3>Black shoes for men</h3>
+      <p>$50.00</p>
+      <button onclick="addToCart('Black shoes for men', 50)">Add to Cart</button>
+      <p> </p>
+    </div>
+    <!-- Add more products as needed -->
+  </section>
+
+  <!-- Cart Section -->
+  <section id="cart">
+    <h2>Shopping Cart</h2>
+    <ul id="cart-items"></ul>
+    <p id="total-price">Total: $0.00</p>
+    <button onclick="checkout()">Checkout</button>
+    <button onclick="clearCart()">Clear</button>
+  </section>
+
+
+  <script src="script.js"></script>
+
+
+  <hr>
+  <footer>
+    (c) Glamour Wedding Store. All rights reserved.
+    <p>Developed by David Jonah</p>
+</body>
+
+</html>
