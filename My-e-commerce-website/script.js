@@ -22,11 +22,11 @@ function updateCart() {
   cart.forEach(item => {
     total += item.price * item.quantity;
     cartItemsElement.innerHTML += `
-      <li>${item.name} - $${item.price} x ${item.quantity}</li>
+      <li>${item.name} - ₦${item.price} x ${item.quantity}</li>
     `;
   });
 
-  document.getElementById('total-price').innerText = `Total: $${total.toFixed(2)}`;
+  document.getElementById('total-price').innerText = `Total: ₦${total.toFixed(2)}`;
   document.getElementById('cart-count').innerText = cart.length;
 }
 
