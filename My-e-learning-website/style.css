@@ -1,0 +1,119 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+header{
+display: flex;
+align-items: center;
+justify-content:space-between;
+background-color:rgb(70, 195, 240);
+color: black;
+font-family: arial;
+padding: 0px 20px;
+font-size: large;
+}
+
+header h1{
+    margin-left: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-image: url('ileanbg.png');
+  }
+
+.nav a{
+    color: #000;
+    text-decoration: none;
+    float: left;
+    gap: 20px;
+    margin-left: 20px;
+    padding: 20px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    border-radius: 20px;
+    
+}
+
+.nav a:hover{
+    background-color: rgb(72, 178, 216);
+}
+
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+    border-radius: 10px;
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 170px;
+    height: 30px;
+    background: transparent;
+    border-radius: 10px;
+}
+
+.btn{
+    width: 100px;
+    height: 30px;
+    background: black;
+    border: 1px solid white;
+    color: white;
+    border-radius: 10px;
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    float: left;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+    margin:auto;
+    position: relative;
+}
+
+.btn2{
+    width: 130px;
+    height: 40px;
+    background: black;
+    border: 1px solid white;
+    color: white;
+    font-size: 15px;
+    margin-left: 80px;
+    border-radius: 10px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content p{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.btn2:hover{
+   background-color: rgb(72, 178, 216);
+    transition: 0.3s ease-in;
+}
+
+footer{
+    background-color: rgb(72, 178, 216);
+    text-align: center;
+    
+}
+
+.content span{
+    color:azure;
+}
